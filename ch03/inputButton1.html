@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+/* 자바스크립트 함수 fucntion 함수명(){} */
+ function calc(){
+	/* 자바스크립트의 변수선언 var 변수명=값; */
+	var price = frm.username.value;//form명.요소명.value로 접근하여 값추출
+	var count=frm.count.value;//form명.요소명.value로 접근하여 값 추출
+	//parseInt("숫자형문자열");//int형으로 변환해주는 함수-기본제공함수
+	 alert('계산하세요'+(parseInt(price)*parseInt(count))+"원입니다.");/* 자바스크립트에서 기본으로 제공하는 함수 */
+ }
+</script>
+<meta charset="UTF-8"><title>type=button</title></head>
+<body>
+<form name="frm">
+물품가격:
+<input type="text" name="username"><br>
+수량:
+<input type="text" name="count"><br>
+<!-- type=button 은 화면에 button모양을 표시하는 것 뿐임.기능이 없음 
+     기능을 사용하기위해서는 이벤트 핸들러를 추가해야함.
+-->
+<input type="button" value="계산" onclick="calc()"><!-- click이벤트를 처리하는 핸들러 onclick -->
+</form>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head>
+<meta charset="UTF-8">
+<title>fieldset</title>
+</head>
+<body>
+<form><!-- form내에서 구분을 해주는 역할  -->
+   <fieldset>
+    <legend>인적사항입력(필수사항)</legend><!-- 영역 타이틀  -->
+    이름:<input type="text" name="name"><br>
+    전화번호:<input type="text" name="tel"><br>
+    주소:<input type="text" name="address">
+   </fieldset>
+   <fieldset>
+    <legend>추가사항</legend>
+    취미:<input type="checkbox" name="hobby" value="reading">독서
+    <input type="checkbox" name="hobby" value="cycle">자전거
+    <input type="checkbox" name="hobby" value="movie">영화감상<br>
+    메세지 수신여부:
+    <input type="checkbox" name="rec" value="mail">이메일
+    <input type="checkbox" name="rec" value="sns">sns
+    <input type="checkbox" name="rec" value="lms">문자
+   </fieldset>
+   <input type="submit" value="전송">
+   <input type="reset" value="취소">
+</form>
+
+</body>
+</html>
