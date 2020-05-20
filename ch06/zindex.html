@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- box요소를 화면의 수직배치에 사용 z-index값이 높으면 상대적으로 위에 , z-index값이 낮으면 아래에 배치됨 -->
+<style>
+#box1{position: absolute; top:0;left:0; background: blue; width:100px;height: 100px;
+            z-index: 100;}
+#box2{position: absolute; top:30px;left:30px; background: yellow;width:100px;height: 100px;
+            z-index: 0;}
+#box3{position: absolute; top:100px;left:100px; background: green;width:100px;height: 100px;
+            z-index: -100;}
+</style>
+</head>
+<body>
+<div id="box1">box #1</div>
+<div id="box2">box #2</div>
+<div id="box3">box #3</div>
+</body>
+</html>
